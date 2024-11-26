@@ -97,6 +97,7 @@ $(function () {
 
             lastShakeTime = currentTime;
             let deltaScore = parseInt($("#kratometrs").attr("data-counter")) - previousScore;
+            console.log(deltaScore);
             previousScore = parseInt($("#kratometrs").attr("data-counter"));
             if (deltaScore < 0 || deltaScore > 150) {
                 reloadPage();
